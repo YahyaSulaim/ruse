@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Shapes</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 1097px;
+            height: 712px;
+            background-color: #d3d3d3;
+        }
+        .rectangle {
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            background-color: #5d0000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+        .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff5f5f;
+            border-radius: 50%;
+            top: 35%;
+            right: 15%;
+            cursor: pointer;
+        }
+        .tilted-bar-1 {
+            position: absolute;
+            width: 200px;
+            height: 20px;
+            background-color: #3b0000;
+            transform: rotate(-30deg);
+            top: 80%;
+            left: 5%;
+            cursor: pointer;
+        }
+        .tilted-bar-2 {
+            position: absolute;
+            width: 200px;
+            height: 20px;
+            background-color: #3b0000;
+            transform: rotate(30deg);
+            top: 10%;
+            right: 5%;
+            cursor: pointer;
+        }
+        .diamond {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #006666;
+            transform: rotate(45deg);
+            top: 20%;
+            left: 30%;
+            cursor: pointer;
+        }
+        /* Dialog styling */
+        .dialog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #333;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 1000;
+        }
+        .dialog p {
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        .close-btn {
+            background-color: #ff5f5f;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="rectangle" onclick="showDialog('Rectangle clicked!')"></div>
+        <div class="circle" onclick="showDialog('Circle clicked!')"></div>
+        <div class="tilted-bar-1" onclick="showDialog('Tilted Bar 1 clicked!')"></div>
+        <div class="tilted-bar-2" onclick="showDialog('Tilted Bar 2 clicked!')"></div>
+        <div class="diamond" onclick="showDialog('Diamond clicked!')"></div>
+    </div>
+
+    <!-- Dialog Box -->
+    <div class="overlay" id="overlay"></div>
+    <div class="dialog" id="dialog-box">
+        <p id="dialog-message"></p>
+        <button class="close-btn" onclick="closeDialog()">Close</button>
+    </div>
+
+    <script>
+        function showDialog(message) {
+            document.getElementById('dialog-message').textContent = message;
+            document.getElementById('dialog-box').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closeDialog() {
+            document.getElementById('dialog-box').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
