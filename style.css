@@ -1,0 +1,23 @@
+body{
+    background-color: #0F0F0F;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#rusetitle{
+    font-family: Cheveuxdange;
+    font-size: 6em;
+    color: #C30000;
+    text-align: center;
+    display: block;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    /* width: 20%; */
+}
+
+@font-face {
+    font-family: Cheveuxdange;
+    src:"Cheveuxdange.ttf";
+  }
