@@ -13,10 +13,23 @@ body{
     margin-top: 55px;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 20%;
     /* width: 20%; */
 }
 
+#crimescenethumb{
+    transform: rotate(-7deg);
+    width: 30%;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+#witnessthumb{
+    transform: rotate(9deg);
+    width: 22%;
+    margin-left: 90px;
+
+}
 @font-face {
     font-family: Cheveuxdange;
     src:"Cheveuxdange.ttf";
