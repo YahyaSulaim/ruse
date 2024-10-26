@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruse/home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <img src="{{url_for('static', filename='images/Ruse.png')}}" id="rusetitle">
+   <a href="{{ url_for('crime') }}"> <img src="{{url_for('static', filename='images/crimescene.png')}}" id="crimescenethumb" alt="sceene"></a>
+   <a href="{{ url_for('witness_selection') }}"> <img src="{{url_for('static', filename='images/witness.png')}}" alt="" id="witnessthumb"></a>
+   <a href="{{ url_for('sus') }}"> <img src="{{url_for('static', filename='images/sus.jpg')}}" alt="" id="suspect"></a><br>
+   
+</body>
+</html>
