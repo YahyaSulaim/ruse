@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.message.user {
+    text-align: right;
+}
+
+.message.bot {
+    text-align: left;
+}
