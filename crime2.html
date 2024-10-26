@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Floor Plan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(2.jpg);
+            font-family: Arial, sans-serif;
+        }
+
+        .floor-plan {
+            position: relative;
+            width: 600px;
+            height: 600px;
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .interactive {
+            position: absolute;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        /* Position the interactive elements */
+        .camera {
+            top: 86%;
+            left: 7%;
+            opacity: 0;
+        }
+
+        .phone {
+            top: 68%;
+            left: 43%;
+            opacity: 0;
+        }
+
+        .cup {
+            top: 55%;
+            left: 44%;
+            opacity: 0;
+        }
+
+        /* Popup styling */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="floor-plan">
+    <img src="Group 2.jpg" alt="Floor Plan" class="background-image">
+
+    <!-- Interactive Elements -->
+    <div class="interactive camera" onclick="showPopup('cameraPopup')">📷</div>
+    <div class="interactive phone" onclick="showPopup('phonePopup')">📱</div>
+    <div class="interactive cup" onclick="showPopup('cupPopup')">☕</div>
+
+    <!-- Popups -->
+    <div id="cameraPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('cameraPopup')">&times;</span>
+            <p>CCTV : Uppon inspection it was clear that jsck was in the cafe earlier itself and was healping Clara with things </p>
+        </div>
+    </div>
+
+    <div id="phonePopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('phonePopup')">&times;</span>
+            <p>PHONE : Upon inspecting everyone’s phones, nothing unusual was found, except that Lisa had a saved text about Clara's preferred drink — perhaps because they were close. thick friends </p>
+        </div>
+    </div>
+
+    <div id="cupPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('cupPopup')">&times;</span>
+            <p>CUP: Upon inspecting the cup used by Clara, traces of cyanide were found</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showPopup(id) {
+        document.getElementById(id).style.display = "flex";
+    }
+
+    function closePopup(id) {
+        document.getElementById(id).style.display = "none";
+    }
+</script>
+
+</body>
+</html>
