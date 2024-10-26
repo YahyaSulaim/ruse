@@ -28,8 +28,13 @@ body{
     transform: rotate(9deg);
     width: 22%;
     margin-left: 90px;
-
 }
+#suspect{
+    transform: rotate(-9deg);
+    width: 22%;
+    margin-left: 90px;
+}
+
 @font-face {
     font-family: Cheveuxdange;
     src:"Cheveuxdange.ttf";
