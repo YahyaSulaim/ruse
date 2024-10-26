@@ -84,9 +84,9 @@
 
     <script>
         const witnesses = [
-            { id: 1, name: 'Lily Carte', photo: 'https://randomuser.me/api/portraits/men/1.jpg' },
-            { id: 2, name: 'Jack Dawson', photo: 'https://randomuser.me/api/portraits/women/2.jpg' },
-            { id: 3, name: 'Emma Grant', photo: 'https://randomuser.me/api/portraits/men/3.jpg' }, // Murderer
+            { id: 1, name: 'Lily Carte', photo: 'lissa.png' },
+            { id: 2, name: 'Jack Dawson', photo: 'jack.png' },
+            { id: 3, name: 'Emma Grant', photo: 'Emma.png' }, // Murderer
             
         ];
 
@@ -134,7 +134,7 @@
         function submitSuspect() {
             const selectedWitness = witnesses.find(w => w.id === selectedSuspect);
             if (selectedWitness) {
-                if (selectedWitness.id === 3) { // If the selected witness is the murderer
+                if (selectedWitness.id === 1) { // If the selected witness is the murderer
                     alert('Well done, detective! You caught the murderer.');
                 } else {
                     alert('Better luck next time. ' + selectedWitness.name + ' is not the murderer.');
