@@ -28,7 +28,7 @@ With Ruse, everyone has a front-row seat to a suspenseful murder mystery. Equipp
 - Tools used: VS Code, Git, Chatgpt, Ideogram, Figma
 
 ### Implementation
-you can play the game [here](https://yahme.pythonanywhere.com/)  
+you can play the game [here](https://yahme.pythonanywhere.com/)    
 -To play locally: 
 ```bash
 git clone https://github.com/username/ruse-detective-game.git
