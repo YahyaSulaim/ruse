@@ -43,14 +43,14 @@ flask run
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
-<img width="720" alt="home" src="https://i.imgur.com/dApk5qZ.png">
+# Screenshots
+<img width="1280" alt="home" src="https://i.imgur.com/dApk5qZ.png">
 *game menu*
-<img width="720" alt="crimescene" src="https://i.imgur.com/chhm8bf.png">
+<img width="1280" alt="crimescene" src="https://i.imgur.com/chhm8bf.png">
 *inspect the crime scene*
-<img width="720" alt="interrogate" src="https://i.imgur.com/jdQZDGJ.png">
+<img width="1280" alt="interrogate" src="https://i.imgur.com/jdQZDGJ.png">
 *Interrogate witnesses*
-<img width="720" alt="suspect" src="https://i.imgur.com/Gso0q3U.png">
+<img width="1280" alt="suspect" src="https://i.imgur.com/Gso0q3U.png">
 *Choose you final suspect*
 
 
