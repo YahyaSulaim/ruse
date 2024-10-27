@@ -31,8 +31,8 @@ With Ruse, everyone has a front-row seat to a suspenseful murder mystery. Equipp
 you can play the game [here](https://yahme.pythonanywhere.com/)    
 -To play locally: 
 ```bash
-git clone https://github.com/username/ruse-detective-game.git
-cd ruse-detective-game
+git clone https://github.com/YahyaSulaim/ruse.git
+cd ruse
 pip install -r requirements.txt
 ```
 # Run
