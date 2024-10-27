@@ -1,6 +1,7 @@
 ﻿<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# Ruse 🔍
+# Ruse 🔍  
+> ⚠️ **Note**: This game is a prototype version created for uselessprojects. we are planning to work on and complete the full version in the future. Stay tuned for updates!
 
 
 ## Basic Details
@@ -28,8 +29,9 @@ With Ruse, everyone has a front-row seat to a suspenseful murder mystery. Equipp
 - Tools used: VS Code, Git, Chatgpt, Ideogram, Figma
 
 ### Implementation
-you can play the game [here](https://yahme.pythonanywhere.com/)    
--To play locally: 
+you can play the game [here](https://yahme.pythonanywhere.com/)  
+  
+- To play locally:
 ```bash
 git clone https://github.com/YahyaSulaim/ruse.git
 cd ruse
