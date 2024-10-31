@@ -43,7 +43,6 @@ flask run
 ```
 
 ### Project Documentation
-For Software:
 
 # Screenshots
 <img width="1280" alt="home" src="https://i.imgur.com/dApk5qZ.png">
